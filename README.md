@@ -28,4 +28,22 @@
 [![Unity](https://img.shields.io/badge/Unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)](https://unity.com/)
 [![Lightroom](https://img.shields.io/badge/Lightroom-31A8FF.svg?style=for-the-badge&logo=adobelightroom&logoColor=white)](https://www.adobe.com/products/photoshop-lightroom.html)
 
+## 💠 - social media :
+
+<a href="https://www.instagram.com/7y____y/" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="50">
+</a>
+<a href="https://www.facebook.com/Yahya xe/" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="50">
+</a>
+
+
+
+
+
+
+
+
+
+
 
