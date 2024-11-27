@@ -1,4 +1,4 @@
-<h1> welcooooome  <img align="right" src= "https://i.pinimg.com/originals/45/d6/12/45d612f74af4d18d3f32d1ddc6ab4f30.gif" width="400"</h1>
+<h1> Welcoooome  <img align="right" src= "https://i.pinimg.com/originals/45/d6/12/45d612f74af4d18d3f32d1ddc6ab4f30.gif" width="400"</h1>
 <p align="center">
 <h2 align="center">
 	A web & game developer and graphic designer 
@@ -7,7 +7,7 @@
 
 ### `About Me :`
 ```bash
-> Nama : Yahya
+> Name : Yahya
 > Age : 16
 > I'm a student in high school 
 ```
