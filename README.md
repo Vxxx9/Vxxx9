@@ -1,14 +1,14 @@
-<h1> Welcoooome  <img align="right" src= "https://i.pinimg.com/originals/45/d6/12/45d612f74af4d18d3f32d1ddc6ab4f30.gif" width="300"</h1>
+<h1> Welcoooome <br> <img align="center" src= "https://i.pinimg.com/originals/45/d6/12/45d612f74af4d18d3f32d1ddc6ab4f30.gif" width="300"</h1>
 <p align="center">
 <h2 align="center">
-	 Maybe a web developer & designer 
+	 Maybe a frontend developer
 	
 </h2>
 
 ### `About Me :`
 ```bash
 > Name : Yahya
-> Age : 16
+> Age : 17
 > I'm a student in high school 
 ```
 
