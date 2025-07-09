@@ -1,7 +1,7 @@
-<h1> Welcoooome <br> <img align="center" src= "https://i.pinimg.com/originals/45/d6/12/45d612f74af4d18d3f32d1ddc6ab4f30.gif" width="300"</h1>
+<h1> Welcoooome <br> <img align="center" src= "https://i.pinimg.com/originals/45/d6/12/45d612f74af4d18d3f32d1ddc6ab4f30.gif" width="500"</h1>
 <p align="center">
 <h2 align="center">
-	 Maybe a frontend developer
+	 Maybe a front-end developer
 	
 </h2>
 
