@@ -1,45 +1,42 @@
-<h1> Welcoooome <br> <img align="center" src= "https://i.pinimg.com/originals/45/d6/12/45d612f74af4d18d3f32d1ddc6ab4f30.gif" width="500"</h1>
+<!--
+<h1> Hellooooo <img src="https://media.tenor.com/4PXxgZON9NwAAAAi/cats-miskey-the-peacemaker.gif" width=50 </h1>
 <p align="center">
+    <img src="https://telegra.ph/file/8219cb8e2fed6e3eae767.gif" width="500" height="280" alt="https://github.com/Hero351"/>
+</p>
 <h2 align="center">
-	 Maybe a front-end developer
+	I'm a Font-end Developer trying his best <img src="https://media.tenor.com/_mYZWyrW3AUAAAAi/peach-goma-pc-night-keyboard-smashing.gif" width="50"/>
 	
 </h2>
 
 ### `About Me :`
 ```bash
-> Name : Yahya
+> Nama : Yahya
 > Age : 17
 > I'm a student in high school 
 ```
 
-## 💡 - Skills :
+## 🪽 - Mastering :
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![python](http://img.shields.io/badge/python-%23157286.svg?style=for-the-badge&logo=python&logoColor=white)
-[![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=Yellow)
 
-## 📖 - learning :
+## 🍟 - learning :
 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-[![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://en.cppreference.com/w/)
-[![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-[![Ruby](https://img.shields.io/badge/Ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)](https://www.ruby-lang.org/)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+-->
+# 📊 GitHub Stats:
+![](https://nirzak-streak-stats.vercel.app/?user=Vxxx9&theme=dark&hide_border=false)<br/>
 
-
-
-
-
-## 💠 - social media :
-
-<a href="https://www.instagram.com/7y____y/" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="50">
-</a> 
-
-
-
-
-
-
+ ```bash 
+ To know more things about me visit my portfolio website  :
+```
+   https://yahya.is-a.dev/
