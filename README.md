@@ -33,7 +33,7 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 -->
-# 📊 GitHub Stats:
+# My Stats:
 ![](https://nirzak-streak-stats.vercel.app/?user=Vxxx9&theme=dark&hide_border=false)<br/>
 
  ```bash 
