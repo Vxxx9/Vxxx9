@@ -34,7 +34,9 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 -->
 # My Stats:
-![](https://nirzak-streak-stats.vercel.app/?user=Vxxx9&theme=dark&hide_border=false)<br/>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Vxxx9&theme=dark&hide_border=true&include_all_commits=false&count_private=false)
+![GitHub Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Vxxx9&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
+
 
  ```bash 
  To know more things about me visit my portfolio website  :
