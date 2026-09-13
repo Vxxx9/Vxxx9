@@ -1,40 +1,81 @@
-</g>
-        <g>
-          <text x="265" y="0" class="glyph">sh</text>
-          <text x="265" y="20" class="glyph">$_</text>
-          <text x="265" y="40" class="glyphHead">%</text>
-          <animateTransform attributeName="transform" type="translate" from="0,-60" to="0,340" dur="3.9s" begin="1.6s" repeatCount="indefinite"/>
-        </g>
-        <g>
-          <text x="300" y="0" class="glyph">10</text>
-          <text x="300" y="20" class="glyph">css</text>
-          <text x="300" y="40" class="glyphHead">0</text>
-          <animateTransform attributeName="transform" type="translate" from="0,-60" to="0,340" dur="2.9s" begin="0.5s" repeatCount="indefinite"/>
-        </g>
-        <g>
-          <text x="335" y="0" class="glyph">01</text>
-          <text x="335" y="20" class="glyph">11</text>
-          <text x="335" y="40" class="glyphHead">Δ</text>
-          <animateTransform attributeName="transform" type="translate" from="0,-60" to="0,340" dur="3.4s" begin="1.0s" repeatCount="indefinite"/>
-        </g>
-        <g>
-          <text x="370" y="0" class="glyph">html</text>
-          <text x="370" y="20" class="glyph">01</text>
-          <text x="370" y="40" class="glyphHead">&gt;_</text>
-          <animateTransform attributeName="transform" type="translate" from="0,-60" to="0,340" dur="2.5s" begin="1.4s" repeatCount="indefinite"/>
-        </g>
+<svg width="900" height="430" viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, 'Courier New', monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+    <radialGradient id="scanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39ffb0" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#39ffb0" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#39ffb0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="rounded">
+      <rect x="1" y="1" width="898" height="428" rx="14" ry="14"/>
+    </clipPath>
+    <style>
+      .mono { font-family: Consolas, 'Courier New', monospace; }
+      .lbl  { fill: #4fd6a8; font-size: 13px; letter-spacing: 1px; }
+      .val  { fill: #e8fff5; font-size: 14px; }
+      .dim  { fill: #6b7d78; font-size: 12px; }
+      .title{ fill: #39ffb0; font-size: 16px; font-weight: bold; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <rect x="0" y="0" width="900" height="430" fill="url(#bg)"/>
+
+    <!-- title bar -->
+    <rect x="0" y="0" width="900" height="34" fill="#11161c"/>
+    <circle cx="20" cy="17" r="6" fill="#ff5f56"/>
+    <circle cx="42" cy="17" r="6" fill="#ffbd2e"/>
+    <circle cx="64" cy="17" r="6" fill="#27c93f"/>
+    <text x="450" y="21" text-anchor="middle" class="dim mono">yahya@github ~ ./profile-scan --live</text>
+
+    <rect x="1" y="1" width="898" height="428" rx="14" ry="14" fill="none" stroke="#1f2a24" stroke-width="1.5"/>
+
+    <!-- LEFT: radar / scan -->
+    <text x="40" y="70" class="title mono">VISUAL.MAP</text>
+    <line x1="40" y1="82" x2="410" y2="82" stroke="#1f3a30" stroke-width="1"/>
+
+    <g transform="translate(225,250)">
+      <circle r="150" fill="url(#scanGlow)"/>
+      <circle r="150" fill="none" stroke="#1f3a30" stroke-width="1"/>
+      <circle r="110" fill="none" stroke="#1f3a30" stroke-width="1"/>
+      <circle r="70"  fill="none" stroke="#1f3a30" stroke-width="1"/>
+      <circle r="30"  fill="none" stroke="#1f3a30" stroke-width="1"/>
+      <line x1="-150" y1="0" x2="150" y2="0" stroke="#1f3a30" stroke-width="1"/>
+      <line x1="0" y1="-150" x2="0" y2="150" stroke="#1f3a30" stroke-width="1"/>
+
+      <!-- sweeping scan wedge -->
+      <g>
+        <path d="M0,0 L150,0 A150,150 0 0,1 137,58 Z" fill="#39ffb0" opacity="0.28">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
+        </path>
+        <line x1="0" y1="0" x2="150" y2="0" stroke="#7dffce" stroke-width="1.5" opacity="0.8">
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
+        </line>
       </g>
+
+      <!-- blips -->
+      <circle cx="60" cy="-40" r="3" fill="#7dffce">
+        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-90" cy="30" r="3" fill="#7dffce">
+        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="20" cy="100" r="3" fill="#7dffce">
+        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="2.7s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle r="4" fill="#39ffb0"/>
     </g>
 
-    <rect x="40" y="92" width="370" height="3" fill="#7dffce" opacity="0.5">
-      <animate attributeName="y" values="92;390;92" dur="4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="40" y="92" width="370" height="300" rx="6" ry="6" fill="none" stroke="#39ffb0" stroke-width="1" opacity="0.6"/>
+    <text x="225" y="410" text-anchor="middle" class="dim mono">scanning developer signature...</text>
 
-    <text x="225" y="412" text-anchor="middle" class="dim mono">compiling developer signature...</text>
-
+    <!-- divider -->
     <line x1="450" y1="45" x2="450" y2="415" stroke="#1f3a30" stroke-width="1"/>
 
+    <!-- RIGHT: system info -->
     <text x="480" y="70" class="title mono">SYSTEM.INFO</text>
     <line x1="480" y1="82" x2="860" y2="82" stroke="#1f3a30" stroke-width="1"/>
 
@@ -44,8 +85,7 @@
 
       <text x="480" y="140" class="lbl">AGE</text>
       <text x="650" y="140" class="val">18</text>
-
-      <text x="480" y="168" class="lbl">STATUS</text>
+            <text x="480" y="168" class="lbl">STATUS</text>
       <text x="650" y="168" class="val">Student</text>
 
       <text x="480" y="196" class="lbl">FOCUS</text>
@@ -64,11 +104,13 @@
       <text x="650" y="308" class="val">github.com/Vxxx9</text>
     </g>
 
+    <!-- typing cursor blink -->
     <rect x="480" y="330" width="9" height="16" fill="#39ffb0">
       <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
     </rect>
     <text x="498" y="343" class="dim mono">connection stable // status: growing</text>
 
+    <!-- scanline overlay -->
     <rect x="0" y="0" width="900" height="430" fill="#39ffb0" opacity="0.02">
       <animate attributeName="y" values="-430;430" dur="5s" repeatCount="indefinite"/>
     </rect>
