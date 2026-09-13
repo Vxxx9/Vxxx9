@@ -80,28 +80,28 @@
     <line x1="480" y1="82" x2="860" y2="82" stroke="#1f3a30" stroke-width="1"/>
 
     <g class="mono">
-      <text x="480" y="112" class="lbl">SUBJECT</text>
-      <text x="650" y="112" class="val">Yahya</text>
+      <text x="480" y="112" class="lbl">NAME</text>
+      <text x="650" y="112" class="val">Yahya EL RHAFARI</text>
 
       <text x="480" y="140" class="lbl">AGE</text>
       <text x="650" y="140" class="val">18</text>
             <text x="480" y="168" class="lbl">STATUS</text>
-      <text x="650" y="168" class="val">Student</text>
+      <text x="650" y="168" class="val"> Sup Student</text>
 
       <text x="480" y="196" class="lbl">FOCUS</text>
-      <text x="650" y="196" class="val">Math · Physics · Code</text>
+      <text x="650" y="196" class="val">Maths · Physics · code-networks</text>
 
       <text x="480" y="224" class="lbl">MASTERING</text>
-      <text x="650" y="224" class="val">Python · HTML5 · CSS3 · JS</text>
+      <text x="650" y="224" class="val">Python · SQL · Git · Bash </text>
 
       <text x="480" y="252" class="lbl">LEARNING</text>
-      <text x="650" y="252" class="val">TypeScript · React · Next.js</text>
+      <text x="650" y="252" class="val">Docker · Wireshark · OWASP</text>
 
       <text x="480" y="280" class="lbl">SYSTEMS</text>
-      <text x="650" y="280" class="val">Linux · Windows · MySQL</text>
+      <text x="650" y="280" class="val">Arch · Debian · Windows </text>
 
       <text x="480" y="308" class="lbl">CONTACT</text>
-      <text x="650" y="308" class="val">github.com/Vxxx9</text>
+      <text x="650" y="308" class="val">yahyavx9@gmail.com/Vxxx9</text>
     </g>
 
     <!-- typing cursor blink -->
