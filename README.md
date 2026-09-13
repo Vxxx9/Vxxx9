@@ -1,27 +1,30 @@
-<!--
-<h1> Hellooooo <img src="https://media.tenor.com/4PXxgZON9NwAAAAi/cats-miskey-the-peacemaker.gif" width=50 </h1>
-<p align="center">
-    <img src="https://telegra.ph/file/8219cb8e2fed6e3eae767.gif" width="500" height="280" alt="https://github.com/Hero351"/>
-</p>
-<h2 align="center">
-	I'm a Font-end Developer trying his best <img src="https://media.tenor.com/_mYZWyrW3AUAAAAi/peach-goma-pc-night-keyboard-smashing.gif" width="50"/>
-	
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=2000&pause=500&color=C2185B&center=true&vCenter=true&width=500&lines=Hellooooo!;Welcome+to+my+profile;I'm+Yahya+ELRHAFARI+%F0%9F%91%8B)](https://git.io/typing-svg)
+
+
+<h2 align="center"> 
+  Sup student balancing math, physics, and a growing love for programming 🌹
 </h2>
 
-### `About Me :`
-```bash
-> Nama : Yahya
-> Age : 17
-> I'm a student in high school 
-```
+### About Me :
+> Name : Yahya
+>
+> Age : 18
+>
+> Status : Student
 
 ## 🪽 - Mastering :
 
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=Yellow)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=yellow)
 
-## 🍟 - learning :
+
+
+## 🍟 - Learning :
+
+
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -31,14 +34,10 @@
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
--->
+
+
+
 # My Stats:
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Vxxx9&theme=dark&hide_border=true&include_all_commits=false&count_private=false)
-![GitHub Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Vxxx9&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 
+![Top Languages](https://ghstats.dev/api/langs?username=octocat&theme=midnight&max_langs=10)
 
- ```bash 
- To know more things about me visit my portfolio website  :
-```
-   https://yahya.is-a.dev/
