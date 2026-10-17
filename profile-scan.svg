@@ -187,16 +187,16 @@
       <text x="580" y="196" class="val">18</text>
 
       <text x="480" y="224" class="lbl">FOCUS</text>
-      <text x="580" y="224" class="val">Maths · Physics · Networks</text>
+      <text x="580" y="224" class="val">Maths · Physics · Networks · Coding</text>
 
       <text x="480" y="252" class="lbl">MASTERING</text>
       <text x="580" y="252" class="val">Python · SQL · Git · Bash</text>
 
       <text x="480" y="280" class="lbl">LEARNING</text>
-      <text x="580" y="280" class="val">Docker · Wireshark · OWASP</text>
+      <text x="580" y="280" class="val">C · OWASP · Nmap · Pandas</text>
 
       <text x="480" y="308" class="lbl">SYSTEMS</text>
-      <text x="580" y="308" class="val">Arch · Debian · Windows</text>
+      <text x="580" y="308" class="val">Linux · Windows</text>
 
       <text x="480" y="336" class="lbl">CONTACT</text>
       <text x="580" y="336" class="val">yahyavx9@gmail.com</text>
