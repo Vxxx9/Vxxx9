@@ -1,0 +1,51 @@
+<svg width="900" height="96" viewBox="0 0 900 96" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Consolas, 'Courier New', monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d141b"/>
+      <stop offset="100%" stop-color="#070b10"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39ffb0"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39ffb0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7dffce" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39ffb0" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#39ffb0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect x="1" y="1" width="898" height="94" rx="16" ry="16"/></clipPath>
+    <style>
+      .eyebrow { fill:#39ffb0; font-family:Consolas,'Courier New',monospace; font-size:10px; letter-spacing:4px; }
+      .title   { fill:#ffffff; font-size:22px; font-weight:700; letter-spacing:3px; }
+      .sub     { fill:#a9c2ba; font-size:13px; letter-spacing:0.4px; text-anchor:end; }
+      .status  { fill:#6f8a82; font-family:Consolas,'Courier New',monospace; font-size:10px; letter-spacing:2.5px; text-anchor:end; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="900" height="96" fill="url(#bg)"/>
+    <circle cx="52" cy="48" r="60" fill="url(#halo)"/>
+    <circle cx="52" cy="48" r="16" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="52" cy="48" r="16" fill="none" stroke="#39ffb0" stroke-width="1">
+      <animate attributeName="r" values="16;30" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="52" cy="48" r="5" fill="#39ffb0"/>
+    <line x1="92" y1="22" x2="92" y2="74" stroke="#1f3a30" stroke-width="1"/>
+
+    <text x="116" y="40" class="eyebrow">NOW BUILDING</text>
+    <text x="116" y="68" class="title">PORTFOLIO WEBSITE</text>
+    <text x="866" y="45" class="sub">A showcase of my skills and projects.</text>
+    <text x="866" y="66" class="status">IN DEVELOPMENT · COMING SOON</text>
+
+    <rect x="-300" y="92" width="300" height="2" fill="url(#shine)">
+      <animate attributeName="x" values="-300;900" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="1" y="1" width="898" height="94" rx="16" ry="16" fill="none" stroke="url(#accent)" stroke-opacity="0.35" stroke-width="1.2"/>
+</svg>
