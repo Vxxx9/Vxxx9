@@ -1,118 +1,219 @@
-<svg width="900" height="430" viewBox="0 0 900 430" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, 'Courier New', monospace">
+<svg width="900" height="460" viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, 'Courier New', monospace">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#05070a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1016"/>
+      <stop offset="100%" stop-color="#04060a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39ffb0"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
     <radialGradient id="scanGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#39ffb0" stop-opacity="0.55"/>
-      <stop offset="70%" stop-color="#39ffb0" stop-opacity="0.08"/>
+      <stop offset="0%" stop-color="#39ffb0" stop-opacity="0.30"/>
+      <stop offset="65%" stop-color="#39ffb0" stop-opacity="0.07"/>
       <stop offset="100%" stop-color="#39ffb0" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="rounded">
-      <rect x="1" y="1" width="898" height="428" rx="14" ry="14"/>
-    </clipPath>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <clipPath id="rounded"><rect x="1" y="1" width="898" height="458" rx="14" ry="14"/></clipPath>
     <style>
-      .mono { font-family: Consolas, 'Courier New', monospace; }
-      .lbl  { fill: #4fd6a8; font-size: 13px; letter-spacing: 1px; }
-      .val  { fill: #e8fff5; font-size: 14px; }
-      .dim  { fill: #6b7d78; font-size: 12px; }
-      .title{ fill: #39ffb0; font-size: 16px; font-weight: bold; letter-spacing: 2px; }
+      .t   { fill:#39ffb0; font-size:13px; font-weight:bold; letter-spacing:3px; }
+      .lbl { fill:#4fd6a8; font-size:11px; letter-spacing:2px; }
+      .val { fill:#e8fff5; font-size:13px; }
+      .dim { fill:#6b7d78; font-size:11px; }
+      .name{ fill:#ffffff; font-size:24px; font-weight:bold; letter-spacing:2px; }
+      .chip{ fill:#9fe9cf; font-size:10px; letter-spacing:1px; text-anchor:middle; }
+      .cd  { fill:#4fd6a8; font-size:9px; letter-spacing:1px; text-anchor:middle; }
+      .bl  { fill:#bfffe6; font-size:9px; letter-spacing:1.5px; }
+      .rd  { fill:#6b7d78; font-size:10px; letter-spacing:1px; }
     </style>
   </defs>
 
   <g clip-path="url(#rounded)">
-    <rect x="0" y="0" width="900" height="430" fill="url(#bg)"/>
+    <rect width="900" height="460" fill="url(#bg)"/>
+
+    <!-- subtle grid -->
+    <g stroke="#10221b" stroke-width="1" opacity="0.7">
+      <path d="M0 80H900M0 140H900M0 200H900M0 260H900M0 320H900M0 380H900M0 440H900"/>
+      <path d="M60 0V460M120 0V460M180 0V460M240 0V460M300 0V460M360 0V460M420 0V460M480 0V460M540 0V460M600 0V460M660 0V460M720 0V460M780 0V460M840 0V460"/>
+    </g>
 
     <!-- title bar -->
-    <rect x="0" y="0" width="900" height="34" fill="#11161c"/>
+    <rect width="900" height="34" fill="#0f151b"/>
     <circle cx="20" cy="17" r="6" fill="#ff5f56"/>
     <circle cx="42" cy="17" r="6" fill="#ffbd2e"/>
     <circle cx="64" cy="17" r="6" fill="#27c93f"/>
-    <text x="450" y="21" text-anchor="middle" class="dim mono">yahya@github ~ ./profile-scan --live</text>
+    <text x="450" y="21" text-anchor="middle" class="dim">yahya@github ~ ./profile-scan --live</text>
+    <rect x="1" y="1" width="898" height="458" rx="14" ry="14" fill="none" stroke="#1f3a30" stroke-width="1.5"/>
 
-    <rect x="1" y="1" width="898" height="428" rx="14" ry="14" fill="none" stroke="#1f2a24" stroke-width="1.5"/>
+    <!-- LEFT: radar -->
+    <text x="40" y="70" class="t">VISUAL.MAP</text>
+    <line x1="40" y1="82" x2="410" y2="82" stroke="url(#accent)" stroke-width="1.5"/>
 
-    <!-- LEFT: radar / scan -->
-    <text x="40" y="70" class="title mono">VISUAL.MAP</text>
-    <line x1="40" y1="82" x2="410" y2="82" stroke="#1f3a30" stroke-width="1"/>
+    <!-- corner readouts -->
+    <text x="40" y="108" class="rd">TARGETS 07</text>
+    <text x="410" y="108" text-anchor="end" class="rd">SWEEP 6.0s</text>
+    <text x="40" y="418" class="rd">SIGNAL STRONG</text>
+    <text x="410" y="418" text-anchor="end" class="rd">LOCK ACQUIRED</text>
 
-    <g transform="translate(225,250)">
+    <g transform="translate(225,252)">
+      <!-- glow disc -->
       <circle r="150" fill="url(#scanGlow)"/>
-      <circle r="150" fill="none" stroke="#1f3a30" stroke-width="1"/>
-      <circle r="110" fill="none" stroke="#1f3a30" stroke-width="1"/>
-      <circle r="70"  fill="none" stroke="#1f3a30" stroke-width="1"/>
-      <circle r="30"  fill="none" stroke="#1f3a30" stroke-width="1"/>
-      <line x1="-150" y1="0" x2="150" y2="0" stroke="#1f3a30" stroke-width="1"/>
-      <line x1="0" y1="-150" x2="0" y2="150" stroke="#1f3a30" stroke-width="1"/>
 
-      <!-- sweeping scan wedge -->
+      <!-- tick rings -->
+      <circle r="148" fill="none" stroke="#2a6b54" stroke-width="4" stroke-dasharray="1.2 11.7" transform="rotate(-0.3)"/>
+      <circle r="148" fill="none" stroke="#39ffb0" stroke-width="7" stroke-dasharray="1.6 75.9" opacity="0.8" transform="rotate(-0.4)"/>
+
+      <!-- range rings -->
+      <circle r="140" fill="none" stroke="#2f7a5f" stroke-width="1.3"/>
+      <circle r="105" fill="none" stroke="#1f3a30" stroke-width="1"/>
+      <circle r="70"  fill="none" stroke="#1f3a30" stroke-width="1"/>
+      <circle r="35"  fill="none" stroke="#1f3a30" stroke-width="1"/>
+
+      <!-- crosshair + diagonals -->
+      <line x1="-140" y1="0" x2="140" y2="0" stroke="#1f3a30" stroke-width="1"/>
+      <line x1="0" y1="-140" x2="0" y2="140" stroke="#1f3a30" stroke-width="1"/>
+      <line x1="-99" y1="-99" x2="99" y2="99" stroke="#142b23" stroke-width="1"/>
+      <line x1="-99" y1="99" x2="99" y2="-99" stroke="#142b23" stroke-width="1"/>
+
+      <!-- compass -->
+      <text x="0" y="-157" class="cd">N</text>
+      <text x="0" y="164" class="cd">S</text>
+      <text x="163" y="3" class="cd">E</text>
+      <text x="-163" y="3" class="cd">W</text>
+
+      <!-- sweep trail + beam -->
       <g>
-        <path d="M0,0 L150,0 A150,150 0 0,1 137,58 Z" fill="#39ffb0" opacity="0.28">
-          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
-        </path>
-        <line x1="0" y1="0" x2="150" y2="0" stroke="#7dffce" stroke-width="1.5" opacity="0.8">
-          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
-        </line>
+        <path d="M0,0 L140,0 A140,140 0 0 0 137.87,-24.31 Z" fill="#39ffb0" opacity="0.30"/>
+        <path d="M0,0 L137.87,-24.31 A140,140 0 0 0 131.56,-47.88 Z" fill="#39ffb0" opacity="0.24"/>
+        <path d="M0,0 L131.56,-47.88 A140,140 0 0 0 121.24,-70 Z" fill="#39ffb0" opacity="0.18"/>
+        <path d="M0,0 L121.24,-70 A140,140 0 0 0 107.24,-90 Z" fill="#39ffb0" opacity="0.12"/>
+        <path d="M0,0 L107.24,-90 A140,140 0 0 0 90,-107.24 Z" fill="#39ffb0" opacity="0.07"/>
+        <path d="M0,0 L90,-107.24 A140,140 0 0 0 70,-121.24 Z" fill="#39ffb0" opacity="0.03"/>
+        <line x1="0" y1="0" x2="140" y2="0" stroke="#39ffb0" stroke-width="3" opacity="0.6" filter="url(#soft)"/>
+        <line x1="0" y1="0" x2="140" y2="0" stroke="#b6ffe3" stroke-width="1.5"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
       </g>
 
-      <!-- blips -->
-      <circle cx="60" cy="-40" r="3" fill="#7dffce">
-        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="0.3s" repeatCount="indefinite"/>
+      <!-- blips (light up when the beam passes) -->
+      <!-- SQL -->
+      <circle cx="70.5" cy="25.7" r="3.2" fill="#7dffce" opacity="0.15">
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="0.33s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="-90" cy="30" r="3" fill="#7dffce">
-        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="1.6s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="20" cy="100" r="3" fill="#7dffce">
-        <animate attributeName="opacity" values="0;1;0" dur="4s" begin="2.7s" repeatCount="indefinite"/>
-      </circle>
+      <text x="78" y="29" class="bl" opacity="0.15">SQL
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="0.33s" repeatCount="indefinite"/>
+      </text>
 
-      <circle r="4" fill="#39ffb0"/>
+      <!-- Git -->
+      <circle cx="18.2" cy="103.4" r="3.2" fill="#7dffce" opacity="0.15">
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="1.33s" repeatCount="indefinite"/>
+      </circle>
+      <text x="26" y="107" class="bl" opacity="0.15">GIT
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="1.33s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- Bash -->
+      <circle cx="-46" cy="38.6" r="3.2" fill="#7dffce" opacity="0.15">
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="2.33s" repeatCount="indefinite"/>
+      </circle>
+      <text x="-54" y="42" text-anchor="end" class="bl" opacity="0.15">BASH
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="2.33s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- Linux -->
+      <circle cx="-94" cy="-34.2" r="3.2" fill="#7dffce" opacity="0.15">
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="3.33s" repeatCount="indefinite"/>
+      </circle>
+      <text x="-102" y="-30" text-anchor="end" class="bl" opacity="0.15">LINUX
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="3.33s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- Networks -->
+      <circle cx="-39.3" cy="-108.1" r="3.2" fill="#7dffce" opacity="0.15">
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="4.17s" repeatCount="indefinite"/>
+      </circle>
+      <text x="-47" y="-105" text-anchor="end" class="bl" opacity="0.15">NETWORKS
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="4.17s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- Python -->
+      <circle cx="47.5" cy="-82.3" r="3.2" fill="#7dffce" opacity="0.15">
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="55" y="-79" class="bl" opacity="0.15">PYTHON
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="5s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- Security -->
+      <circle cx="113.3" cy="-52.8" r="3.2" fill="#7dffce" opacity="0.15">
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="5.58s" repeatCount="indefinite"/>
+      </circle>
+      <text x="64" y="-60" class="bl" opacity="0.15">SECURITY
+        <animate attributeName="opacity" values="1;0.15" dur="6s" begin="5.58s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- center pulse -->
+      <circle r="4" fill="none" stroke="#39ffb0" stroke-width="1.2">
+        <animate attributeName="r" values="4;34" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="4.5" fill="#39ffb0"/>
+      <circle r="1.8" fill="#04060a"/>
     </g>
 
-    <text x="225" y="410" text-anchor="middle" class="dim mono">scanning developer signature...</text>
+    <text x="225" y="438" text-anchor="middle" class="dim">scanning developer signature...</text>
 
-    <!-- divider -->
-    <line x1="450" y1="45" x2="450" y2="415" stroke="#1f3a30" stroke-width="1"/>
+    <line x1="450" y1="48" x2="450" y2="440" stroke="#1f3a30" stroke-width="1"/>
 
-    <!-- RIGHT: system info -->
-    <text x="480" y="70" class="title mono">SYSTEM.INFO</text>
-    <line x1="480" y1="82" x2="860" y2="82" stroke="#1f3a30" stroke-width="1"/>
+    <!-- RIGHT: identity -->
+    <text x="480" y="70" class="t">IDENTITY</text>
+    <line x1="480" y1="82" x2="865" y2="82" stroke="url(#accent)" stroke-width="1.5"/>
 
-    <g class="mono">
-      <text x="480" y="112" class="lbl">NAME</text>
-      <text x="650" y="112" class="val">Yahya EL RHAFARI</text>
+    <text x="480" y="122" class="name">YAHYA EL RHAFARI</text>
 
-      <text x="480" y="140" class="lbl">AGE</text>
-      <text x="650" y="140" class="val">18</text>
-            <text x="480" y="168" class="lbl">STATUS</text>
-      <text x="650" y="168" class="val"> Sup Student</text>
+    <!-- tag chips -->
+    <g fill="#0e1c17" stroke="#1f5a45" stroke-width="1">
+      <rect x="480" y="136" width="125" height="22" rx="11"/>
+      <rect x="613" y="136" width="125" height="22" rx="11"/>
+      <rect x="746" y="136" width="90" height="22" rx="11"/>
+    </g>
+    <text x="542.5" y="151" class="chip">SECURITY-MINDED</text>
+    <text x="675.5" y="151" class="chip">SYSTEMS THINKER</text>
+    <text x="791" y="151" class="chip">ANALYTICAL</text>
 
-      <text x="480" y="196" class="lbl">FOCUS</text>
-      <text x="650" y="196" class="val">Maths · Physics · code-networks</text>
+    <g>
+      <text x="480" y="196" class="lbl">AGE</text>
+      <text x="580" y="196" class="val">18</text>
 
-      <text x="480" y="224" class="lbl">MASTERING</text>
-      <text x="650" y="224" class="val">Python · SQL · Git · Bash </text>
+      <text x="480" y="224" class="lbl">FOCUS</text>
+      <text x="580" y="224" class="val">Maths · Physics · Networks</text>
 
-      <text x="480" y="252" class="lbl">LEARNING</text>
-      <text x="650" y="252" class="val">Docker · Wireshark · OWASP</text>
+      <text x="480" y="252" class="lbl">MASTERING</text>
+      <text x="580" y="252" class="val">Python · SQL · Git · Bash</text>
 
-      <text x="480" y="280" class="lbl">SYSTEMS</text>
-      <text x="650" y="280" class="val">Arch · Debian · Windows </text>
+      <text x="480" y="280" class="lbl">LEARNING</text>
+      <text x="580" y="280" class="val">Docker · Wireshark · OWASP</text>
 
-      <text x="480" y="308" class="lbl">CONTACT</text>
-      <text x="650" y="308" class="val">yahyavx9@gmail.com/Vxxx9</text>
+      <text x="480" y="308" class="lbl">SYSTEMS</text>
+      <text x="580" y="308" class="val">Arch · Debian · Windows</text>
+
+      <text x="480" y="336" class="lbl">CONTACT</text>
+      <text x="580" y="336" class="val">yahyavx9@gmail.com</text>
+
+      <text x="480" y="364" class="lbl">GITHUB</text>
+      <text x="580" y="364" class="val">github.com/Vxxx9</text>
     </g>
 
-    <!-- typing cursor blink -->
-    <rect x="480" y="330" width="9" height="16" fill="#39ffb0">
+    <!-- status line -->
+    <rect x="480" y="398" width="8" height="14" fill="#39ffb0">
       <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
     </rect>
-    <text x="498" y="343" class="dim mono">connection stable // status: growing</text>
+    <text x="496" y="409" class="dim">connection stable // status: growing</text>
 
-    <!-- scanline overlay -->
-    <rect x="0" y="0" width="900" height="430" fill="#39ffb0" opacity="0.02">
-      <animate attributeName="y" values="-430;430" dur="5s" repeatCount="indefinite"/>
+    <!-- scanline -->
+    <rect width="900" height="460" fill="#39ffb0" opacity="0.02">
+      <animate attributeName="y" values="-460;460" dur="6s" repeatCount="indefinite"/>
     </rect>
   </g>
 </svg>
